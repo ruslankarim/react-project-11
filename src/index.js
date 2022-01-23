@@ -9,12 +9,15 @@ function App() {
     useMapbox("map", [37.61192, 55.76199], 10);
 
     return (
-        <>
-            <button id="rerender" onClick={() => setRandom(Math.random())}>
-                Ререндер!
-            </button>
-            <div id="map"></div>
-        </>
+        <div className="container mx-auto py-10">
+            <div className="flex justify-center mb-5">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"  id="rerender" onClick={() => setRandom(Math.random())}>
+                    Ререндер!
+                </button>
+            </div>
+
+            <div className="rounded" id="map"></div>
+        </div>
     );
 }
 
