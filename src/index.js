@@ -16,7 +16,7 @@ function App() {
                 </button>
             </div>
 
-            <div className="rounded" id="map"></div>
+            <div className="rounded h-96" id="map"></div>
         </div>
     );
 }
